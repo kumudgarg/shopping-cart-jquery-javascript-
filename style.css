@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face{
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+
+
+.product{
+    color: lavender;
+    font-size: 2em;
+    text-align: center;
+    padding-left: 8em;
+}
+
+
+.main-footer {
+    position: absolute;
+    padding: 10px 10px 0px 10px;
+    width: 100%;
+    height: auto;
+    background-color: cadetblue;
+    color: white;
+   
+}
+
+.image-footer {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    white-space: nowrap;
+    margin: 10px;
+    padding-left: 10em;
+    align-items: center;
+}
+
+.image-footer a {
+    padding: 1em;
+    padding-left: 13em;
+   
+}
+
+.image-footer img {
+    width: 50px;
+    height: 50px;
+    
+}
+
+
+
+.container {
+
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: visible;
+    max-height: auto;
+}
+
+
+.card {
+
+    width: 12rem;
+    height: 14rem;
+  
+}
+
+
+
+
+.card-body {
+    margin: 0;
+}
+
+.card-img-top {
+    width: 160px;
+    height: 170px;
+}
+
+.btn {
+    position: relative;
+    width: 120px;
+    height: 40px;
+    left: 6em;
+    bottom: 3.5em;
+    font-size: 0.2em;
+
+}
+
+body, wrapper {
+    min-height:100vh;
+ }
+
+ .flex-fill {
+    flex:1 1 auto;
+ }
+
+
+
+ .cart-image {
+    padding-left: 20em;
+ }
+
+ .cart-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+ }
+
+ .content-section {
+     margin: 1em;
+ }
+
+ .section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+
+
+
+
+.count-content {
+    color: blue;
+    padding-right: 33em;
+}
+
+#count-cart {
+    color: red;
+}
+
+.total-content {
+    color: red;
+  
+}
+
+#total-cart {
+    color: seagreen;
+}
+
+.modal-title {
+    padding-left: 11em;
+    font-weight: bold;
+    font-style: italic;
+    font-size: xx-large;
+    color: slateblue;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.flex-fill {
+    flex: 1 1 auto;
+ }
+
+ .bg { 
+    background-image: url("Image/product-package-boxes-shopping-bag-cart-with-laptop-online-shopping-delivery-concept_38716-138.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-bg {
+    background-color: darkslategray;
+}
+
+.about-us {
+    color: floralwhite;
+    padding-top: 2em;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 

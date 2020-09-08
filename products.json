@@ -1,0 +1,86 @@
+ [
+  {
+    "id": 1,
+    "name": "Canon EOS Rebel T1i",
+    "price": 2500.00,
+    "currency": "Rupees",
+    "image": "Image/camera.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Nikon D90 DX",
+    "price": 2750.50,
+    "currency": "Rupees",
+    "image": "Image/camera2.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Canon EOS 50D",
+    "price": 3000.00,
+    "currency": "Rupees",
+    "image": "Image/camera3.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy BUDS",
+    "price": 637.55,
+    "currency": "Rupees",
+    "image": "Image/earpod1.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Audio-Technica",
+    "price": 735.99,
+    "currency": "Rupees",
+    "image": "Image/headphone.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "JBL Pure Bass Wireless",
+    "price": 800.99,
+    "currency": "Rupees",
+    "image": "Image/neckearphone.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Nike",
+    "price": 1799.99,
+    "currency": "Rupees",
+    "image": "Image/shoe1.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "adidas",
+    "price": 1500.99,
+    "currency": "Rupees",
+    "image": "Image/shoe2.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Burberry",
+    "price": 1200.99,
+    "currency": "Rupees",
+    "image": "Image/shoe3.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Fossil",
+    "price": 2100.99,
+    "currency": "Rupees",
+    "image": "Image/watch1.jpeg"
+  },
+  {
+    "id": 11,
+    "name": "Sonata",
+    "price": 1600.99,
+    "currency": "Rupees",
+    "image": "Image/watch2.jpeg"
+  },
+  {
+    "id": 12,
+    "name": "Fastrack",
+    "price": 2500.99,
+    "currency": "Rupees",
+    "image": "Image/watch3.jpeg"
+  }
+]

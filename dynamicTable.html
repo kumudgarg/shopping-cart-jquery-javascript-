@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        table {
+            width: 100%;
+            font: 17px Calibri;
+            background-color:darkseagreen ;
+        }
+
+        table,
+        th,
+        td {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+            color: rgb(139, 0, 0);
+        }
+        table img 
+        {
+            border: none;
+            width: 51px;
+            height: 51px;
+        }
+
+    </style>
+    <div id="showImage"></div>
+     <div id="showData"></div>
+
+</head>
+
+<body>
+    
+        <p>
+            <input type="button" value="FILL SELECT DROPDOWN LIST WITH JSON" id="bt" />
+        </p>
+
+        <select id="sel">
+            <option value="">--SELECT--</option>
+        </select>
+
+        <p id="msg"></p>
+
+
+    <script>
+
+
+
+        var arrItems = [];
+        var col = [];
+        var images;
+        var k;
+        $(document).ready(function () {
+            $('#bt').click(function(){
+            $.getJSON('./products.json', function (data) {
+
+                $.each(data, function (index, value) {
+                    $('#sel').append('<option value="'+value.id+'">'+value.name+'</option>');
+                    arrItems.push(value);
+                });
+
+                for (var i = 0; i < arrItems.length; i++) {
+                    for (var key in arrItems[i]) {
+                        if (col.indexOf(key) === -1) {
+                            col.push(key);
+                        }
+                    }
+                }
+
+                //create dynamic table 
+
+                var table = document.createElement("table");
+
+                //create HTML TABLE Header row using the extracted headers above
+
+                var tr = table.insertRow(-1); //TABLE ROW 
+
+                for (var i = 0; i < col.length; i++) {
+                    var th = document.createElement("th"); // TABLE HEADER
+                    th.innerHTML = col[i];
+                    tr.appendChild(th);
+
+                }
+
+                // ADD JSON DATA TO THE TABLE AS ROWS
+
+                for (var i = 0; i < arrItems.length; i++) {
+                    tr = table.insertRow(-1);
+
+                    for (var j = 0; j < col.length; j++) {
+                        var tabCell = tr.insertCell(-1);
+                        if(j === 5){
+
+                            var img = document.createElement('img');
+                            img.src = arrItems[i].image;
+
+                           images += "<a href='"+arrItems[i].url+"'><img src='"+arrItems[i].url+'/'+arrItems[i].image+"' width='25px' height='25px' border='none' ></a>";
+                            tabCell.appendChild(img);
+                        }
+                        else
+                            tabCell.innerHTML = arrItems[i][col[j]];
+                    }
+                }
+
+                // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER
+                $('#showImage').html(images);
+                var divContainer = document.getElementById("showData");
+                divContainer.innerHTML = "";
+                divContainer.appendChild(table);
+                
+
+            });
+
+        });
+
+        //SHOW SELECTED VALUES
+
+        $('#sel').change(function(){
+            $('#msg').text('Selected Item: ' + this.options[this.selectedIndex].text);
+        });
+
+    });
+
+        console.log(arrItems);
+        console.log(col);
+    </script>
+</body>
+
+</html>
